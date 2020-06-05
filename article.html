@@ -20,10 +20,14 @@
     <noscript><link rel="stylesheet" href="css/noscript.css" /></noscript>
     <link href="https://fonts.googleapis.com/css?family=Barlow&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <!--  Magnific Popup css file  -->
+    <link rel="stylesheet" href="vendor/Magnific-Popup/dist/magnific-popup.css">
+    <!--  Responsive css file  -->
+    <link rel="stylesheet" href="css/responsive.css">
 
 </head>
 
-<body class="is-preload">
+<body>
 
 
     <!-- ##### Header Area Start ##### -->
@@ -36,7 +40,7 @@
                     <nav class="classy-navbar justify-content-between" id="oneMusicNav">
 
                         <!-- Nav brand -->
-                        <a href="index.html" class="card-header"><img src="img/core-img/logo.png" alt="" style="width: 250px;"></a>
+                        <a href="index.html"><img src="img/core-img/logo1.png" alt="" style="width: 250px;"></a>
 
                         <!-- Navbar Toggler -->
                         <div class="classy-navbar-toggler">
@@ -58,7 +62,7 @@
                                     <li><a href="theguru.html">The Guru</a></li>
                                     <li><a href="videos.html">Video</a></li>
                                     <li><a href="photojourney.html">Photo Gallery</a></li>
-                                    <li><a href="#article">Articles</a></li>
+                                    <li><a href="#article">Media</a></li>
                                     <li><a href="#contact">Contact</a></li>
                                 </ul>
 
@@ -75,89 +79,165 @@
     <!-- ##### Header Area End ##### -->
 
     <!-- ### Article Section Start #### -->
-    <div id="wrapper" style="background-color: #161748;">
-        <!-- ##### Photo Area Start ##### -->
-
-        <section id="article">
-
-
-            <!-- Main -->
-            <section id="main">
-
-                <!-- Items -->
-
-                <center>
-                    <div class="item intro span-3 ">
-                        <h1>Articles</h1>
-                        <p style="background-color: aquamarine;"> on Guruji</p>
+    <div>
+        <main class="site-main">
+            <section id="article" class="project-area">
+                <br>
+                <div class="container">
+                    <div class="project-title pb-5">
+                        <h1 class="text-uppercase title-h1"></h1>
                     </div>
-                </center>
 
+                    <div class="button-group">
+                        <button type="button" class="active" id="btn1" data-filter="*">All</button>
+                        <button type="button" data-filter=".news">Newspaper Articles</button>
+                        <button type="button" data-filter=".handwritten">Written Words of Guruji</button>
+                        <button type="button" data-filter=".other">Other</button>
+                    </div>
+                    <hr>
+                    <div class="row grid">
+                        <div class="col-lg-4 col-md-6 col-sm-12 element-item news">
+                            <div class="our-project">
+                                <div class="img article-thumbnail">
+                                    <a class="test-popup-link" href="media\Article-1 .jpg">
+                                        <img src="media\Article-1 .jpg" alt="portfolio-2" class="img-fluid">
+                                    </a>
+                                </div>
+                                <div class="title py-4">
+                                    <h4 class="text-uppercase">Article on Guruji </h4>
+                                    <span class="text-secondary">Newspaper article </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-12 element-item news ">
+                            <div class="our-project">
+                                <div class="img article-thumbnail">
+                                    <a class="test-popup-link" href="media\Article-2.jpg">
+                                        <img src="media\Article-2.jpg" alt="portfolio-3" class="img-fluid">
+                                    </a>
+                                </div>
+                                <div class="title py-4">
+                                    <h4 class="text-uppercase">Strengthning Guru Shishya Bond </h4>
+                                    <span class="text-secondary">Newspaper article</span>
+                                </div>
+                            </div>
+                        </div>
 
-                <div class="items ">
-                    <article class="item thumb span-3 gallery ">
-                        <h3>Invitation Letter from All India Radio </h3>
-                        <a href="articles\All India Radio.jpg" class="image">
-                            <img src="articles\All India Radio.jpg" alt=""></a>
-                    </article>
+                        <div class="col-lg-4 col-md-6 col-sm-12 element-item handwritten">
+                            <div class="our-project">
+                                <div class="img article-thumbnail">
+                                    <a class="test-popup-link" href="media\instructions_page1.jpeg">
+                                        <img src="media\instructions_page1.jpeg" alt="portfolio-1" class="img-fluid">
+                                    </a>
+                                </div>
+                                <div class="title py-4">
+                                    <h4 class="text-uppercase">A learning manual written by Guruji for his student Pushkar Lele (page 1)</h4>
+                                    <span class="text-secondary">credits - Puskar Lele </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-12 element-item handwritten">
+                            <div class="our-project">
+                                <div class="img article-thumbnail">
+                                    <a class="test-popup-link" href="media\instructions_page2.jpeg">
+                                        <img src="media\instructions_page1.jpeg" alt="portfolio-1" class="img-fluid">
+                                    </a>
+                                </div>
+                                <div class="title py-4">
+                                    <h4 class="text-uppercase">A learning manual written by Guruji for his student Pushkar Lele (page 2)</h4>
+                                    <span class="text-secondary">credits - Puskar Lele </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-12 element-item handwritten">
+                            <div class="our-project">
+                                <div class="img article-thumbnail">
+                                    <a class="test-popup-link" href="media\instructions_page3.jpeg">
+                                        <img src="media\instructions_page1.jpeg" alt="portfolio-1" class="img-fluid">
+                                    </a>
+                                </div>
+                                <div class="title py-4">
+                                    <h4 class="text-uppercase">A learning manual written by Guruji for his student Pushkar Lele (page 3)</h4>
+                                    <span class="text-secondary">credits - Puskar Lele </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-12 element-item handwritten">
+                            <div class="our-project">
+                                <div class="img article-thumbnail">
+                                    <a class="test-popup-link" href="media\instructions_page4.jpeg">
+                                        <img src="media\instructions_page1.jpeg" alt="portfolio-1" class="img-fluid">
+                                    </a>
+                                </div>
+                                <div class="title py-4">
+                                    <h4 class="text-uppercase">A learning manual written by Guruji for his student Pushkar Lele (page 4)</h4>
+                                    <span class="text-secondary">credits - Puskar Lele </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-12 element-item handwritten">
+                            <div class="our-project">
+                                <div class="img article-thumbnail">
+                                    <a class="test-popup-link" href="media\instructions_page5.jpeg">
+                                        <img src="media\instructions_page1.jpeg" alt="portfolio-1" class="img-fluid">
+                                    </a>
+                                </div>
+                                <div class="title py-4">
+                                    <h4 class="text-uppercase">A learning manual written by Guruji for his student Pushkar Lele (page 5)</h4>
+                                    <span class="text-secondary">credits - Puskar Lele </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-12 element-item handwritten">
+                            <div class="our-project">
+                                <div class="img article-thumbnail">
+                                    <a class="test-popup-link" href="media\letter_by_ajoba.jpeg">
+                                        <img src="media\letter_by_ajoba.jpeg" alt="portfolio-1" class="img-fluid">
+                                    </a>
+                                </div>
+                                <div class="title py-4">
+                                    <h4 class="text-uppercase">Signature in Modilipi</h4>
+                                    <span class="text-secondary">credits - Geetish Joshi </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-12 element-item other">
+                            <div class="our-project">
+                                <div class="img article-thumbnail">
+                                    <a class="test-popup-link" href="media\Sharda Nyanpeeth Article.jpg">
+                                        <img src="media\Sharda Nyanpeeth Article.jpg" alt="portfolio-2" class="img-fluid">
+                                    </a>
+                                </div>
+                                <div class="title py-4">
+                                    <h4 class="text-uppercase">Sharda Nyanpeeth </h4>
+                                    <span class="text-secondary">Honourary Invite by Sharda Nyanpeeth</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-12 element-item other">
+                            <div class="our-project">
+                                <div class="img article-thumbnail">
+                                    <a class="test-popup-link" href="media\Pushkar_Article_.png">
+                                        <img src="media\Pushkar_Article_.png" alt="portfolio-2" class="img-fluid">
+                                    </a>
+                                </div>
+                                <div class="title py-4">
+                                    <h4 class="text-uppercase">Sangeetatla Vidyarthi Rahila Avdel By Pushkar Lele </h4>
+                                </div>
+                            </div>
+                        </div>
 
-                    <article class="item thumb span-3 gallery">
-                        <h3>Article in Newspaper</h3>
-                        <a href="articles\Article-1 .jpg" class="image">
-                            <img src="articles\Article-1 .jpg" alt=""></a>
-                    </article>
-
-                    <article class="item thumb span-3 gallery">
-                        <h3>Strenghtening the Guru Shishya bond</h3>
-                        <a href="articles/Article-2.jpg" class="image"><img src="articles\Article-2.jpg" alt=""></a>
-                    </article>
+                    </div>
                 </div>
-                <div class="items">
-                    <article class="item thumb span-3 gallery">
-                        <h3>Student - Astad Kale </h3>
-                        <a href="articles/Astad Kale article.jpg" class="image"><img src="articles/Astad Kale article.jpg" alt=""></a>
-                    </article>
-
-
-                    <article class="item thumb span-3 gallery">
-                        <h3>Invitation by Sharda Nyanpeeth </h3>
-                        <a href="articles/Sharda Nyanpeeth Article.jpg" class="image"><img src="articles/Sharda Nyanpeeth Article.jpg" alt=""></a>
-                    </article>
-
-
-
-                </div>
-
 
 
             </section>
-            <footer class="footer-area ">
-                <div class="container ">
-
-                    <div class="col-12 col-md-12 ">
-                        <div class="section-heading white wow fadeInUp " data-wow-delay="100ms " style="margin-bottom: -20px; ">
-
-
-                        </div>
-
-
-                    </div>
-                </div>
-            </footer>
-
-            <!-- ##### Photo Area End ##### -->
-        </section>
-        <!-- Footer -->
-
-
+        </main>
     </div>
 
-
-
-
-
-
     <!-- ### Article Section End #### -->
+
+
     <!-- ##### Contact Area Start ##### -->
     <section class="contact-area section-padding-100 bg-img bg-overlay bg-fixed has-bg-img " style="background-image: url(img/bg-img/bg-2.jpg); " id="contact">
         <div class="container ">
@@ -206,6 +286,7 @@
             </div>
         </div>
     </section>
+
     <!-- ##### Contact Area End ##### -->
 
     <!-- ##### Footer Area Start ##### -->
@@ -221,7 +302,7 @@
                             Copyright
                             <script>
                                 document.write(new Date().getFullYear());
-                            </script> © Pimpalkhare Guruji. All rights Reserved. | Site Developed by  <a href="https://www.linkedin.com/in/sawan-pimpalkhare-50463a159/ " target="_blank ">Sawan Pimpalkhare</a>
+                            </script> © Pimpalkhare Guruji. All rights Reserved. | Site Developed by  <a href="https://oddmentiusmaximus.github.io " target="_blank ">Sawan Pimpalkhare</a>
 
                     </p>
                 </div>
@@ -233,12 +314,7 @@
     <!-- ##### Footer Area Start ##### -->
     <!-- ##### All Javascript Script ##### -->
     <!-- Scripts -->
-    <script src="js/jquery.min.js"></script>
-    <script src="js/jquery.poptrox.min.js"></script>
-    <script src="js/browser.min.js"></script>
-    <script src="js/breakpoints.min.js"></script>
-    <script src="js/util.js"></script>
-    <script src="js/main.js"></script>
+
     <!-- jQuery-2.2.4 js -->
     <script src="js/jquery/jquery-2.2.4.min.js "></script>
     <!-- Popper js -->
@@ -249,6 +325,13 @@
     <script src="js/plugins/plugins.js "></script>
     <!-- Active js -->
     <script src="js/active.js "></script>
+
+    <!--  Magnific popup script file  -->
+    <script src="./vendor/Magnific-Popup/dist/jquery.magnific-popup.min.js"></script>
+    <!--  Magnific popup script file  -->
+    <script src="./vendor/Magnific-Popup/dist/jquery.magnific-popup.min.js"></script>
+    <!--  custom js file  -->
+    <script src="./js/main.js"></script>
 </body>
 
 </html>

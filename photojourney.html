@@ -16,14 +16,18 @@
     <link rel="icon" href="img/core-img/favicon.ico">
 
     <!-- Stylesheet -->
-    <link rel="stylesheet" href="css/main.css" />
     <noscript><link rel="stylesheet" href="css/noscript.css" /></noscript>
     <link href="https://fonts.googleapis.com/css?family=Barlow&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <!--  Magnific Popup css file  -->
+    <link rel="stylesheet" href="vendor/Magnific-Popup/dist/magnific-popup.css">
+    <!--  Responsive css file  -->
+    <link rel="stylesheet" href="css/responsive.css">
+
 
 </head>
 
-<body class="is-preload">
+<body>
 
 
     <!-- ##### Header Area Start ##### -->
@@ -36,7 +40,7 @@
                     <nav class="classy-navbar justify-content-between" id="oneMusicNav">
 
                         <!-- Nav brand -->
-                        <a href="index.html" class="card-header"><img src="img/core-img/logo.png" alt="" style="width: 250px;"></a>
+                        <a href="index.html"><img src="img/core-img/logo1.png" alt="" style="width: 250px;"></a>
 
                         <!-- Navbar Toggler -->
                         <div class="classy-navbar-toggler">
@@ -58,7 +62,7 @@
                                     <li><a href="theguru.html">The Guru</a></li>
                                     <li><a href="videos.html">Video</a></li>
                                     <li><a href="#photojourney">Photo Gallery</a></li>
-                                    <li><a href="article.html">Articles</a></li>
+                                    <li><a href="article.html">Media</a></li>
                                     <li><a href="#contact">Contact</a></li>
                                 </ul>
 
@@ -73,115 +77,235 @@
         </div>
     </header>
     <!-- ##### Header Area End ##### -->
-    <!-- Wrapper -->
-    <div id="wrapper" style="background-color: #161748;">
-        <!-- ##### Photo Area Start ##### -->
-
-        <section id="photojourney">
-
-
-            <!-- Main -->
-            <section id="main">
-
-                <!-- Items -->
-                <div class="items">
-
-                    <div class="item intro span-3 ">
-                        <h1>Photo Gallery</h1>
-                        <p style="background-color: aquamarine;"> of Guruji</p>
+    <!-- ##### Photo Area Start ##### -->
+    <div>
+        <main class="site-main">
+            <section id="photojourney" class="project-area">
+                <br>
+                <div class="container">
+                    <div class="project-title pb-5">
+                        <h1 class="text-uppercase title-h1"></h1>
                     </div>
-                </div>
 
-                <div class="items ">
-                    <article class="item thumb span-1 gallery ">
-                        <h3>Young Guruji</h3>
-                        <a href="img\bg-img\Pimpalkhare Guruji_ Photo Journey_files\Gangadhar_Pimpalkhare.jpg" class="image">
-                            <img src="img\bg-img\Pimpalkhare Guruji_ Photo Journey_files\Gangadhar_Pimpalkhare.jpg" alt=""></a>
-                    </article>
+                    <div class="button-group">
+                        <button type="button" class="active" id="btn1" data-filter="*">All</button>
+                        <button type="button" data-filter=".EarlyLife">EarlyLife</button>
+                        <button type="button" data-filter=".ceremony">Guruji in Ceremony</button>
+                        <button type="button" data-filter=".solo">Solo Pics</button>
+                        <button type="button" data-filter=".other">Other</button>
+                    </div>
+                    <hr>
 
-                    <article class="item thumb span-1 gallery">
-                        <h3>Felicitating Pt Bhimsen Joshi</h3>
-                        <a href="img\bg-img\Pimpalkhare Guruji_ Photo Journey_files\felicitating_Pt_Bhimsen_Joshi.jpg" class="image"><img src="img\bg-img\Pimpalkhare Guruji_ Photo Journey_files\felicitating_Pt_Bhimsen_Joshi.jpg" alt=""></a>
-                    </article>
+                    <div class="row grid">
+                        <div class="col-lg-4 col-md-6 col-sm-12 element-item ceremony">
+                            <div class="our-project">
+                                <div class="img thumbnail">
+                                    <a class="test-popup-link" href="img\bg-img\Pimpalkhare Guruji_ Photo Journey_files\release_2.jpg">
+                                        <img src="img\bg-img\Pimpalkhare Guruji_ Photo Journey_files\release_2.jpg" alt="portfolio-1" class="img-fluid">
+                                    </a>
+                                </div>
+                                <div class="title py-4">
+                                    <h4 class="text-uppercase">Releasing Cassetts of Ustad Usman Khan</h4>
+                                    <span class="text-secondary">by hands of Pimpalkhare Guruji </span>
+                                    <span class="text-secondary">From Left - Ustad Usman Khan, Pimpalkhare Guruji</span>
+                                </div>
+                            </div>
+                        </div>
 
-                    <article class="item thumb span-1 gallery">
-                        <h3>Guru Vinayakbuwa & Sawai Gandharva</h3>
-                        <a href="img\bg-img\Pimpalkhare Guruji_ Photo Journey_files\Guru_Vinayakbuwa_and_Sawai_Gandharva.jpg" class="image"><img src="img\bg-img\Pimpalkhare Guruji_ Photo Journey_files\Guru_Vinayakbuwa_and_Sawai_Gandharva.jpg" alt=""></a>
-                    </article>
+                        <div class="col-lg-4 col-md-6 col-sm-12 element-item EarlyLife other">
+                            <div class="our-project">
+                                <div class="img thumbnail">
+                                    <a class="test-popup-link" href="img\bg-img\Pimpalkhare Guruji_ Photo Journey_files\Guru_Vinayakbuwa_and_Sawai_Gandharva.jpg">
+                                        <img src="img\bg-img\Pimpalkhare Guruji_ Photo Journey_files\Guru_Vinayakbuwa_and_Sawai_Gandharva.jpg" alt="portfolio-3" class="img-fluid">
+                                    </a>
+                                </div>
+                                <div class="title py-4">
+                                    <h4 class="text-uppercase">Teachers of Guruji </h4>
+                                    <span class="text-secondary">From left -Pt Vinayakbuva , Sawai Gandharva</span>
+                                </div>
+                            </div>
+                        </div>
 
-                    <article class="item thumb span-1 gallery">
-                        <h3>PimpalkhareGuruj</h3>
-                        <a href="img\bg-img\Pimpalkhare Guruji_ Photo Journey_files\PimpalkhareGuruj_ni.jpg" class="image"><img src="img\bg-img\Pimpalkhare Guruji_ Photo Journey_files\PimpalkhareGuruj_ni.jpg" alt=""></a>
-                    </article>
+                        <div class="col-lg-4 col-md-6 col-sm-12 element-item EarlyLife">
+                            <div class="our-project">
+                                <div class="img thumbnail">
+                                    <a class="test-popup-link" href="img\bg-img\Pimpalkhare Guruji_ Photo Journey_files\young_Gangadharji.jpg">
+                                        <img src="img\bg-img\Pimpalkhare Guruji_ Photo Journey_files\young_Gangadharji.jpg" alt="portfolio-1" class="img-fluid">
+                                    </a>
+                                </div>
+                                <div class="title py-4">
+                                    <h4 class="text-uppercase">Young Ganngadharji</h4>
+                                    <span class="text-secondary">with his fellow mates </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-12 element-item ceremony">
+                            <div class="our-project">
+                                <div class="img thumbnail">
+                                    <a class="test-popup-link" href="img\bg-img\Pimpalkhare Guruji_ Photo Journey_files\Pimpalkhare_guruji_in_concert-1.jpg">
+                                        <img src="img\bg-img\Pimpalkhare Guruji_ Photo Journey_files\Pimpalkhare_guruji_in_concert-1.jpg" alt="portfolio-5" class="img-fluid">
+                                    </a>
+                                </div>
+                                <div class="title py-4">
+                                    <h4 class="text-uppercase">Guruji in Gurupornima</h4>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-12 element-item ceremony">
+                            <div class="our-project">
+                                <div class="img thumbnail">
+                                    <a class="test-popup-link" href="img\bg-img\Pimpalkhare Guruji_ Photo Journey_files\Pimpalkhare_guruji_in_concert.jpg">
+                                        <img src="img\bg-img\Pimpalkhare Guruji_ Photo Journey_files\Pimpalkhare_guruji_in_concert.jpg" alt="portfolio-6" class="img-fluid">
+                                    </a>
+                                </div>
+                                <div class="title py-4">
+                                    <h4 class="text-uppercase">Guruji in Gurupornima</h4>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-12 element-item EarlyLife">
+                            <div class="our-project">
+                                <div class="img thumbnail">
+                                    <a class="test-popup-link" href="img\bg-img\Pimpalkhare Guruji_ Photo Journey_files\Gangadhar_Pimpalkhare.jpg">
+                                        <img src="img\bg-img\Pimpalkhare Guruji_ Photo Journey_files\Gangadhar_Pimpalkhare.jpg" alt="portfolio-2" class="img-fluid">
+                                    </a>
+                                </div>
+                                <div class="title py-4">
+                                    <h4 class="text-uppercase">Young Gangadhar Pimpalkhare</h4>
+                                    <span class="text-secondary">as a school teacher</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-12 element-item  solo">
+                            <div class="our-project">
+                                <div class="img thumbnail">
+                                    <a class="test-popup-link" href="img\bg-img\Pimpalkhare Guruji_ Photo Journey_files\PimpalkhareGuruj_ni.jpg">
+                                        <img src="img\bg-img\Pimpalkhare Guruji_ Photo Journey_files\PimpalkhareGuruj_ni.jpg" alt="portfolio-7" class="img-fluid">
+                                    </a>
+                                </div>
+                                <div class="title py-4">
+                                    <h4 class="text-uppercase">Pt Gangadharbuva Pimpalkhare</h4>
+                                    <span class="text-secondary">Close Up Image</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-12 element-item EarlyLife">
+                            <div class="our-project">
+                                <div class="img thumbnail">
+                                    <a class="test-popup-link" href="img\bg-img\Pimpalkhare Guruji_ Photo Journey_files\Guruji as School Teacher.jpg">
+                                        <img src="img\bg-img\Pimpalkhare Guruji_ Photo Journey_files\Guruji as School Teacher.jpg" alt="portfolio-4" class="img-fluid">
+                                    </a>
+                                </div>
+                                <div class="title py-4">
+                                    <h4 class="text-uppercase">Guruji as a school master</h4>
+                                    <span class="text-secondary">Guruji in his early life</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-12 element-item solo ">
+                            <div class="our-project">
+                                <div class="img thumbnail">
+                                    <a class="test-popup-link" href="img\bg-img\Pimpalkhare Guruji_ Photo Journey_files\PimpalkhareGuruji.jpg">
+                                        <img src="\img\bg-img\Pimpalkhare Guruji_ Photo Journey_files\PimpalkhareGuruji.jpg" alt="portfolio-8" class="img-fluid">
+                                    </a>
+                                </div>
+                                <div class="title py-4">
+                                    <h4 class="text-uppercase">Pt Gangadharbuva Pimpalkhare </h4>
+                                    <span class="text-secondary">Black and White Image</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-12 element-item solo">
+                            <div class="our-project">
+                                <div class="img thumbnail">
+                                    <a class="test-popup-link" href="img\bg-img\Pimpalkhare Guruji_ Photo Journey_files\PimpalkhareGuruji(1).jpg">
+                                        <img src="img\bg-img\Pimpalkhare Guruji_ Photo Journey_files\PimpalkhareGuruji(1).jpg" alt="portfolio-8" class="img-fluid">
+                                    </a>
+                                </div>
+                                <div class="title py-4">
+                                    <h4 class="text-uppercase">Pimpalkhare Guruji</h4>
+                                    <span class="text-secondary">Full Colored Image</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-12 element-item other">
+                            <div class="our-project">
+                                <div class="img thumbnail">
+                                    <a class="test-popup-link" href="img\bg-img\Pimpalkhare Guruji_ Photo Journey_files\Image_combined.jpg">
+                                        <img src="img\bg-img\Pimpalkhare Guruji_ Photo Journey_files\Image_combined.jpg" alt="portfolio-1" class="img-fluid">
+                                    </a>
+                                </div>
+                                <div class="title py-4">
+                                    <h4 class="text-uppercase">From Left - Mrs Lele,Gangubai ,Krishna Hangal </h4>
+                                    <h4 class="text-uppercase">From Right - Baburoa Hangal,Pimpalkhare Guruji ,Mr Lele </h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-12 element-item ceremony">
+                            <div class="our-project">
+                                <div class="img thumbnail">
+                                    <a class="test-popup-link" href="\img\bg-img\Pimpalkhare Guruji_ Photo Journey_files\felicitating_Pt_Bhimsen_Joshi_full_Image.png">
+                                        <img src="img\bg-img\Pimpalkhare Guruji_ Photo Journey_files\felicitating_Pt_Bhimsen_Joshi_full_Image.png" alt="portfolio-1" class="img-fluid">
+                                    </a>
+                                </div>
+                                <div class="title py-4">
+                                    <h4 class="text-uppercase">Felicitating Bharat Ratna Bhimsen Joshi</h4>
+                                    <span class="text-secondary">From left - Pt Bhimsen Joshi, Pimpalkhare Guruji </span>
+                                </div>
+                            </div>
+                        </div>
 
 
-                    <article class="item thumb span-1 gallery">
-                        <h3>Concert</h3>
-                        <a href="img\bg-img\Pimpalkhare Guruji_ Photo Journey_files\Pimpalkhare_guruji_in_concert.jpg" class="image"><img src="img\bg-img\Pimpalkhare Guruji_ Photo Journey_files\Pimpalkhare_guruji_in_concert.jpg" alt=""></a>
-                    </article>
-
-                    <article class="item thumb span-1 gallery">
-                        <h3>Guruji in Concert</h3>
-                        <a href="img\bg-img\Pimpalkhare Guruji_ Photo Journey_files\Pimpalkhare_guruji_in_concert-1.jpg" class="image"><img src="img\bg-img\Pimpalkhare Guruji_ Photo Journey_files\Pimpalkhare_guruji_in_concert-1.jpg" alt=""></a>
-                    </article>
-
-                </div>
-
-                <!-- Items -->
-                <div class="items">
-
-
-                    <article class="item thumb span-1 gallery">
-                        <h3>PimpalkhareGuruji Full Image</h3>
-                        <a href="img\bg-img\Pimpalkhare Guruji_ Photo Journey_files\PimpalkhareGuruji(1).jpg" class="image"><img src="img\bg-img\Pimpalkhare Guruji_ Photo Journey_files\PimpalkhareGuruji(1).jpg" alt=""></a>
-                    </article>
-                    <article class="item thumb span-2 gallery">
-                        <h3>Release</h3>
-                        <a href="img\bg-img\Pimpalkhare Guruji_ Photo Journey_files\release_2.jpg" class="image"><img src="img\bg-img\Pimpalkhare Guruji_ Photo Journey_files\release_2.jpg" alt=""></a>
-                    </article>
-                    <article class="item thumb span-2 gallery">
-                        <h3>Releasing Cassettes</h3>
-                        <a href="img\bg-img\Pimpalkhare Guruji_ Photo Journey_files\releasing_cassettes.jpg" class="image"><img src="img\bg-img\Pimpalkhare Guruji_ Photo Journey_files\releasing_cassettes.jpg" alt=""></a>
-                    </article>
-                    <article class="item thumb span-3 gallery">
-                        <h3>Young Gangadharji</h3>
-                        <a href="img\bg-img\Pimpalkhare Guruji_ Photo Journey_files\young_Gangadharji.jpg" class="image"><img src="img\bg-img\Pimpalkhare Guruji_ Photo Journey_files\young_Gangadharji.jpg" alt=""></a>
-                    </article>
-                </div>
-                <!-- Items -->
-                <div class="items">
-                    <article class="item thumb span-1 gallery">
-                        <h3>Guruji as School Teacher</h3>
-                        <a href="img\bg-img\Pimpalkhare Guruji_ Photo Journey_files\Guruji as School Teacher.jpg" class="image"><img src="img\bg-img\Pimpalkhare Guruji_ Photo Journey_files\Guruji as School Teacher.jpg" alt=""></a>
-                    </article>
-                    <!-- <article class="item thumb span-2">
-                        <h2>Kingdom of the Wind</h2>
-                        <a href="images/fulls/05.jpg" class="image"><img src="images/thumbs/05.jpg" alt=""></a>
-                    </article>
-                    <article class="item thumb span-1">
-                        <h2>Elysium</h2>
-                        <a href="images/fulls/04.jpg" class="image"><img src="images/thumbs/04.jpg" alt=""></a>
-                    </article> -->
-                </div>
-
-
-            </section>
-            <footer class="footer-area ">
-                <div class="container ">
-
-                    <div class="col-12 col-md-12 ">
-                        <div class="section-heading white wow fadeInUp " data-wow-delay="100ms " style="margin-bottom: -20px; ">
-
-
+                        <div class="col-lg-4 col-md-6 col-sm-12 element-item ceremony">
+                            <div class="our-project">
+                                <div class="img thumbnail">
+                                    <a class="test-popup-link" href="img\bg-img\Pimpalkhare Guruji_ Photo Journey_files\releasing_cassettes.jpg">
+                                        <img src="img\bg-img\Pimpalkhare Guruji_ Photo Journey_files\releasing_cassettes.jpg" alt="portfolio-1" class="img-fluid">
+                                    </a>
+                                </div>
+                                <div class="title py-4">
+                                    <h4 class="text-uppercase">Releasing Cassetts of Ustad Usman Khan</h4>
+                                    <span class="text-secondary">by hands of Pimpalkhare Guruji </span>
+                                    <span class="text-secondary">From Left - Ustad Usman Khan, Pimpalkhare Guruji</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-12 element-item other">
+                            <div class="our-project">
+                                <div class="img thumbnail">
+                                    <a class="test-popup-link" href="img\bg-img\Pimpalkhare Guruji_ Photo Journey_files\Pimpalkhare Guruji with Chota Gandharva .jpg">
+                                        <img src="img\bg-img\Pimpalkhare Guruji_ Photo Journey_files\Pimpalkhare Guruji with Chota Gandharva .jpg" alt="portfolio-1" class="img-fluid">
+                                    </a>
+                                </div>
+                                <div class="title py-4">
+                                    <h4 class="text-uppercase">Pimpalkhare Guruji with Chota Gandharva</h4>
+                                    <span class="text-secondary">From left - Chota Gandharva, Pimpalkhare Guruji </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-12 element-item solo">
+                            <div class="our-project">
+                                <div class="img thumbnail">
+                                    <a class="test-popup-link" href="img\bg-img\Pimpalkhare Guruji_ Photo Journey_files\Ajoba with Tambora.jpeg">
+                                        <img src="img\bg-img\Pimpalkhare Guruji_ Photo Journey_files\Ajoba with Tambora.jpeg" alt="portfolio-1" class="img-fluid">
+                                    </a>
+                                </div>
+                                <div class="title py-4">
+                                    <h4 class="text-uppercase">Pandit Gangadharbuva Pimpalkhare </h4>
+                                    <span class="text-secondary">Solo on tambora </span>
+                                </div>
+                            </div>
                         </div>
 
 
                     </div>
                 </div>
-            </footer>
 
-            <!-- ##### Photo Area End ##### -->
-        </section>
+                <!-- ##### Photo Area End ##### -->
+            </section>
+        </main>
         <!-- Footer -->
 
 
@@ -252,9 +376,9 @@
                             Copyright
                             <script>
                                 document.write(new Date().getFullYear());
-                            </script> © Pimpalkhare Guruji. All rights Reserved. | Site Developed by  <a href="https://www.linkedin.com/in/sawan-pimpalkhare-50463a159/ " target="_blank ">Sawan Pimpalkhare</a> | Design:
+                            </script> © Pimpalkhare Guruji. All rights Reserved. | Site Developed by  <a href="https://oddmentiusmaximus.github.io " target="_blank ">Sawan Pimpalkhare</a>
 
-                        <a href="http://html5up.net" target="_blank ">HTML5 UP</a>
+
 
                     </p>
                 </div>
@@ -266,12 +390,7 @@
     <!-- ##### Footer Area Start ##### -->
     <!-- ##### All Javascript Script ##### -->
     <!-- Scripts -->
-    <script src="js/jquery.min.js"></script>
-    <script src="js/jquery.poptrox.min.js"></script>
-    <script src="js/browser.min.js"></script>
-    <script src="js/breakpoints.min.js"></script>
-    <script src="js/util.js"></script>
-    <script src="js/main.js"></script>
+
     <!-- jQuery-2.2.4 js -->
     <script src="js/jquery/jquery-2.2.4.min.js "></script>
     <!-- Popper js -->
@@ -282,6 +401,14 @@
     <script src="js/plugins/plugins.js "></script>
     <!-- Active js -->
     <script src="js/active.js "></script>
+    <!--  isotope js library  -->
+    <script src="./vendor/isotope/isotope.min.js"></script>
+    <!--  Magnific popup script file  -->
+    <script src="./vendor/Magnific-Popup/dist/jquery.magnific-popup.min.js"></script>
+    <!--  custom js file  -->
+    <script src="./js/main.js"></script>
+
+
 </body>
 
 </html>
